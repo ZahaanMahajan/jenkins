@@ -12,7 +12,7 @@ def buildImage() {
         }
 }
 
-def deployApp() {
+def deployImage() {
     echo "deploying the application..."
 }
 
