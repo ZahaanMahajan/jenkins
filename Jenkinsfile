@@ -23,10 +23,12 @@ pipeline {
                 }
             }
         }
-        stage('build image') {
+        stage('build & push image') {
             steps {
                 script {
                     buildImage 'zahaanmahajan/demo-app:jma-3.0'
+                    dockerLogin()
+                    dockerPush 'zahaanmahajan/demo-app:jma-3.0'
                 }
             }
         }
