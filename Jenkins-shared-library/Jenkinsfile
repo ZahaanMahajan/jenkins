@@ -3,7 +3,7 @@
 // This is the way to access a shared library directly from the remote url
 // when not configured from jenkins ui
 /**/
-library identifier: 'jenkins-shared-library@master', retriever: modernSCM([
+library identifier: 'jenkins-shared-library@main', retriever: modernSCM([
         $class: 'GitSCMSource',
         remote: 'https://github.com/ZahaanMahajan/jenkins-shared-library',
         credentialsId: 'gitlab-credentials'
