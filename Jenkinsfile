@@ -1,5 +1,9 @@
 #!/usr/bin/env groovy
 
+// This is the way to access a shared library directly from the url from the file 
+// library identifier: 'jenkins-shared-library@master', retriever: modernSCM()
+
+// When shared library is setup is the jenkins ui
 @Library('jenkins-shared-library')
 def gv
 
